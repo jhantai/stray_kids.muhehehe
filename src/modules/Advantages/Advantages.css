@@ -1,0 +1,57 @@
+.catAdvantages{
+    background: url('../../assets/Group 113.png');
+    background-size: 100%;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.advantagesTitle{
+    text-align: center;
+    margin: 100px auto;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    color: var(--violet);
+    /*font-weight: 10;*/
+    font-size: 30px;
+}
+
+.advantagesSection{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.advantagesCards{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.advantagesCard{
+    display: flex;
+    gap: 20px;
+}
+
+.advantagesCard p {
+    width: 400px;
+}
+
+.advantagesCard img {
+    border-radius: 100px;
+    width: 75px;
+    height: 75px;
+}
+
+.advantagesFood h3{
+    color: var(--pink);
+}
+
+.advantagesRelax h3{
+    color: var(--violet);
+}
+
+.advantagesContact h3{
+    color: var(--yellow);
+}
