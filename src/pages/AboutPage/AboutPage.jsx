@@ -1,3 +1,4 @@
+
 import React from 'react'
 import './AboutPage.css'
 import Background from '../../components/Background/Background';
@@ -12,7 +13,6 @@ const AboutPage = () => {
         <Background/>
         <Grooming/>
         <SwiperAnimals/>
-        <Footer/>
        </div>
         
     );
