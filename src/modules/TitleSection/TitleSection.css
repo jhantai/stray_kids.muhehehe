@@ -1,0 +1,14 @@
+.titleSectionMain{
+    background: url('../../assets/Group 112.png') no-repeat;
+    background-size: 100% 100%;
+    width: 212.5vh;
+    height: 110vh;
+}
+
+.titleSectionMain h1{
+    padding: 4% 0 0 10%;
+    font-size: 74px;
+    color: white;
+    width: 60%;
+    margin: 0 auto;
+}
