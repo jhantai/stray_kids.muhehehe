@@ -2,9 +2,10 @@ import React from 'react';
 
 const MenuPage = () => {
     return (
-        <div>
-            
-        </div>
+     <section>
+              <div className="background"></div>
+
+     </section>
     );
 };
 
