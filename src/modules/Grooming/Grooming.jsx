@@ -14,7 +14,7 @@ function Grooming(props) {
                     <p></p>
                     <Button
                         color = '#41EAC1'
-                        value ={`#{CallIcon}`}
+                        value = "dd"
                     />
                 </div>
             </div>
