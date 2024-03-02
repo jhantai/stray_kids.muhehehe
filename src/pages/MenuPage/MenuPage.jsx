@@ -41,7 +41,7 @@ const MenuPage = () => {
                          <div
                              className='eda_photo'
                              key={idx}>
-                             <img src={item.src} alt=""/>
+                             <img className='tamak_photo' src={item.src} alt=""/>
 
                          </div>
                      )
