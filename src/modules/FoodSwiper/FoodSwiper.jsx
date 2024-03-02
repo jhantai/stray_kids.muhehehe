@@ -9,6 +9,7 @@ import './FoodSwiper.css'
 function FoodSwiper(props) {
     return (
         <section className={'FoodSwiper'}>
+            <h2>Наша еда</h2>
             <Swiper
                 navigation={true}
                 pagination={true}
@@ -20,9 +21,8 @@ function FoodSwiper(props) {
                 {food.map((item, idx) => {
                     return (
                         <SwiperSlide className={'mainSwiperSlide'} key={idx}>
-                            <h3>{item.name}</h3>
                             <div>
-                                <img src={item.src} alt="food"/>
+                                <img className={'swiperFoodImg'} src={item.src} alt="food"/>
                             </div>
                             <p>{item.description}</p>
                         </SwiperSlide>

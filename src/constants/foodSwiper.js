@@ -5,19 +5,15 @@ import zavtraki from '../assets/zavtraki.png'
 
 export const food = [
     {
-        name: 'Завтраки',
         src: zavtraki,
     },
     {
-        name: 'Горячии блюда',
         src: gorych,
     },
     {
-        name: 'Салаты',
         src: salat,
     },
     {
-        name: 'Десерты',
         src: deserts,
     },
 ]
