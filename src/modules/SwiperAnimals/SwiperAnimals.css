@@ -1,0 +1,10 @@
+.swiper-slide  {
+  height: max-content;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.swiper-animals-description {
+  padding-bottom: 25px;
+  color: red;
+}
