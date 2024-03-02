@@ -2,13 +2,20 @@ import React, {useState} from 'react';
 import './Header.css'
 import logo from '../../assets/logo.png'
 import CloseIcon from '@mui/icons-material/Close';
+import {animate} from "../../constants/animate";
+import { motion } from "framer-motion";
 
 function Header(props) {
     const [activeModalWindov, setActiveModalWindov] = useState(false)
     return (
         <div>
             {activeModalWindov ?
-                <div className={'headerModalWindov'}>
+                <motion.div
+                    className={'headerModalWindov'}
+                    variants={animate}
+                    initial="hidden"
+                    whileInView="visible"
+                >
                     {/*<div>{CloseIcon}</div>*/}
                     <button
                         className={'closeBtn'}
@@ -26,7 +33,7 @@ function Header(props) {
                             <p className={'modalWindovWarning'}>**вам позвонит менеджер для уточнения брони</p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
                 :
                 null
 

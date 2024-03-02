@@ -1,0 +1,67 @@
+
+.block_with_photo{
+    display: flex;
+    flex-direction: row;
+}
+.eda_photo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px auto;
+    width:700px;
+    height: 241px;
+
+
+}
+.tamak_photo{
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.foodCards{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foodCard{
+    background: #eeeeee;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foodListImg{
+    width: 400px;
+    /*height: 500px;*/
+}
+
+.foodName{
+    font-size: 24px;
+    color: var(--yellow);
+}
+
+.price{
+    color: var(--violet);
+    font-weight: 1000;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.foodListInfo{
+    width: 400px;
+}
+
+.CloseIcon{
+    width: 50%;
+    /*padding: 0 0 0 30%;*/
+    background: #eeeeee;
+}
+
+.CloseIcon svg{
+    margin: 10px;
+    cursor: pointer;
+}
