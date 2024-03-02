@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    padding: 15% 0 0 10%;
+    padding: 15% 0 0 0;
     font-size: 74px;
     width: 60%;
     margin: 0 auto;
@@ -19,14 +19,12 @@
     font-size: 50px;
 }
 .form_about_menu{
-
-background: white;
-    width: 200vh;
+    background: white;
+    width: 212.5vh;
     height: 100%;
     border: 1px solid black;
     border-radius: 45px 45px 0 0    ;
     margin: 13% 0 0 0;
-
 
 }
 .text_info{
@@ -62,5 +60,15 @@ background: white;
 .eda_photo{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin: 5px auto;
+    width:700px;
+    height: 241px;
+
+
 }
+.tamak_img{
+    border-radius: 20px;
+}
+
 
