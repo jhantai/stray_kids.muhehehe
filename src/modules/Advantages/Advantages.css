@@ -6,9 +6,21 @@
     overflow: hidden;
 }
 
+.advantagesTitle{
+    text-align: center;
+    margin: 100px auto;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    color: var(--violet);
+    /*font-weight: 10;*/
+    font-size: 30px;
+}
+
 .advantagesSection{
     display: flex;
     justify-content: center;
+    gap: 70px;
 }
 
 .advantagesCards{
@@ -19,6 +31,7 @@
 
 .advantagesCard{
     display: flex;
+    gap: 20px;
 }
 
 .advantagesCard p {
