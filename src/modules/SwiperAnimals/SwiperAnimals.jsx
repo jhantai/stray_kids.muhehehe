@@ -7,9 +7,10 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './SwiperAnimals.css'
 
+
 export default function App() {
   return (
-    <>
+    <><h3 className='title'>Наши животные</h3>
       <Swiper
         navigation={true}
         pagination={true}
@@ -19,11 +20,11 @@ export default function App() {
         {animalsSwiper.map((item, idx) => {
           return (
               <SwiperSlide key={idx}>
-                <h3>{item.name}</h3>
+                
                 <div>
-                  <img src={item.src} alt="cat"/>
+                  <img  src={item.src} alt="cat"/>
                 </div>
-                <p className='swiper-animals-description'>{item.description}</p>
+                {/* <p className='swiper-animals-description'>{item.description}</p> */}
               </SwiperSlide>
           )
         })}
