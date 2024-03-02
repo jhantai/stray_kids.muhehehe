@@ -5,6 +5,9 @@ import salaty from "../../assets/salat.png"
 import deserty from "../../assets/deserty.png"
 import './FoodList.css'
 import {zavtrakii} from "../../constants/foodList/zavtrakii";
+import {goryachee} from "../../constants/foodList/goryachee";
+import {salat} from "../../constants/foodList/salat";
+import {desert} from "../../constants/foodList/desert";
 import CloseIcon from "@mui/icons-material/Close";
 
 function FoodList(props) {
@@ -122,9 +125,122 @@ function FoodList(props) {
                     </div>
                     :
                     null
-                    
+
                 }
             </div>
+
+
+            <div>
+                {hidenFootList ?
+                    goryach &&
+                    <div>
+                        <div className={'foodCards'}>
+                            <div
+                                className={'CloseIcon'}
+                                onClick={() => {
+                                    setHidenFootList(false)
+                                    setZavtraks(false)
+                                    setSalats(false)
+                                    setDeserts(false)
+                                    setZavtraks(false)
+                                }}
+                            >
+                                <CloseIcon/>
+                            </div>
+                            {goryachee.map((item, idx) => {
+                                return (
+                                    <div className={'foodCard'}>
+                                        <img className={'foodListImg'} src={item.img} alt=""/>
+                                        <div className={'foodListInfo'}>
+                                            <h3 className={'foodName'}>{item.foodName}</h3>
+                                            <p className={'sostav'}>{item.sostav}</p>
+                                            <p className={'price'}>{item.price}</p>
+                                        </div>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
+                    :
+                    null
+
+                }
+            </div>
+
+            <div>
+                {hidenFootList ?
+                    salats &&
+                    <div>
+                        <div className={'foodCards'}>
+                            <div
+                                className={'CloseIcon'}
+                                onClick={() => {
+                                    setHidenFootList(false)
+                                    setDeserts(false)
+                                    setGoryach(false)
+                                    setZavtraks(false)
+                                }}
+                            >
+                                <CloseIcon/>
+                            </div>
+                            {salat.map((item, idx) => {
+                                return (
+                                    <div className={'foodCard'}>
+                                        <img className={'foodListImg'} src={item.img} alt=""/>
+                                        <div className={'foodListInfo'}>
+                                            <h3 className={'foodName'}>{item.foodName}</h3>
+                                            <p className={'sostav'}>{item.sostav}</p>
+                                            <p className={'price'}>{item.price}</p>
+                                        </div>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
+                    :
+                    null
+
+                }
+            </div>
+
+
+            <div>
+                {hidenFootList ?
+                    deserts &&
+                    <div>
+                        <div className={'foodCards'}>
+                            <div
+                                className={'CloseIcon'}
+                                onClick={() => {
+                                    setHidenFootList(false)
+                                    setGoryach(false)
+                                    setZavtraks(false)
+                                    setSalats(false)
+                                }}
+                            >
+                                <CloseIcon/>
+                            </div>
+                            {desert.map((item, idx) => {
+                                return (
+                                    <div className={'foodCard'}>
+                                        <img className={'foodListImg'} src={item.img} alt=""/>
+                                        <div className={'foodListInfo'}>
+                                            <h3 className={'foodName'}>{item.foodName}</h3>
+                                            <p className={'sostav'}>{item.sostav}</p>
+                                            <p className={'price'}>{item.price}</p>
+                                        </div>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
+                    :
+                    null
+
+                }
+            </div>
+
+
         </section>
     );
 }
