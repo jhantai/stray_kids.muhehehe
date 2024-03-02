@@ -1,7 +1,5 @@
 import React from 'react';
 import './Grooming.css'
-import Button from "../../components/button/Button";
-import CallIcon from '@mui/icons-material/Call';
 
 function Grooming(props) {
     const color = ''

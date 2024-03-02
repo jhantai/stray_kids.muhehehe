@@ -2,6 +2,7 @@ import React from 'react';
 import TitleSection from "../../modules/TitleSection/TitleSection";
 import Advantages from "../../modules/Advantages/Advantages";
 import Grooming from "../../modules/Grooming/Grooming";
+import FoodSwiper from "../../modules/FoodSwiper/FoodSwiper";
 
 const HomePage = () => {
     return (
@@ -9,6 +10,7 @@ const HomePage = () => {
            <TitleSection />
            <Advantages />
            <Grooming/>
+           <FoodSwiper />
         </div>
     );
 };

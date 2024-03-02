@@ -1,9 +1,10 @@
 header{
     display: flex;
     justify-content: space-between;
-    margin: 10px 0;
     position: fixed;
     width: 100%;
+    padding: 0 5%;
+    background: rgba(0, 0, 0, 0.22);
 }
 
 header img{
@@ -18,6 +19,103 @@ header ul {
     margin-top: 18px;
 }
 
+header ul input{
+    border: none;
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    background: #FF6C99;
+}
+
+header ul input:hover{
+    background: #ff5e90;
+}
+
 header ul li {
     margin-top: 12px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+header ul li a:hover{
+    color: #f5f2f2;
+}
+
+.headerModalWindov{
+    background: url('../../assets/Group 115.png') no-repeat;
+    background-size: 100%;
+    width: 80%;
+    height: 400px;
+    position: fixed;
+    z-index: 100;
+    border-radius: 70px;
+    margin: 150px 10%;
+}
+
+.closeBtn{
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    float: right;
+    margin: 20px 40px;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.headerModalWindov button:hover{
+    color: #f5f2f2;
+}
+
+.headerModalWindov div h2{
+    margin: 80px 130px;
+    color: white;
+    text-align: center;
+    font-size: 52px;
+}
+
+.headerForm form{
+    display: flex;
+    gap: 10px;
+    margin: 0px 4%;
+}
+
+.headerForm form input{
+    background: white;
+    width: 250px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 10px;
+    border: 1px solid darkgray;
+    outline: none;
+}
+
+.headerForm form button{
+    background: var(--violet);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 0 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.headerForm form button:hover{
+    background: #9f6cbe;
+}
+
+.inputTelephoneNumber::placeholder{
+    font-size: 23px;
+}
+
+.modalWindovWarning{
+    color: white;
+    margin: 100px 0 0 50px;
 }
