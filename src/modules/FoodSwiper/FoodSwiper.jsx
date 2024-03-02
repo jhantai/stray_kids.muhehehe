@@ -6,9 +6,18 @@ import 'swiper/css/pagination';
 import {Navigation, Pagination} from "swiper/modules";
 import {food} from "../../constants/foodSwiper";
 import './FoodSwiper.css'
-function FoodSwiper(props) {
+import {animate} from "../../constants/animate";
+import { motion } from "framer-motion";
+
+function FoodSwiper() {
     return (
-        <section className={'FoodSwiper'}>
+        <motion.section
+            className={'FoodSwiper'}
+            variants={animate}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{once: true}}
+        >
             <h2>Наша еда</h2>
             <Swiper
                 navigation={true}
@@ -29,7 +38,7 @@ function FoodSwiper(props) {
                     )
                 })}
             </Swiper>
-        </section>
+        </motion.section>
     );
 }
 

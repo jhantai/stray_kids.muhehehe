@@ -1,10 +1,17 @@
 import React from 'react';
 import './Grooming.css'
+import {animate} from "../../constants/animate";
+import { motion } from "framer-motion";
 
 function Grooming(props) {
-    const color = ''
     return (
-        <section className={'groomingSection'}>
+        <motion.section
+            className={'groomingSection'}
+            variants={animate}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{once: true}}
+        >
             <h2>Уход</h2>
             <div className={'groomingText'}>
                 <div>
@@ -18,7 +25,7 @@ function Grooming(props) {
                 </div>
                 <div className={'groomingPhoto'}></div>
             </div>
-        </section>
+        </motion.section>
     );
 }
 
