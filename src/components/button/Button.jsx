@@ -1,9 +1,14 @@
 import React from 'react';
+import './Button.css'
 //
-const Button = (color) => {
+const Button = (color, value) => {
     console.log(color)
     return (
-        <input style={{background: `${color.color}`}} value={'ddd'} type={'button'} />
+        <input
+            className={'button'}
+            style={{background: `${color.color}`}}
+            value={value}
+            type={'button'} />
     );
 }
 
