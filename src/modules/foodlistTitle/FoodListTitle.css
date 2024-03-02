@@ -1,0 +1,16 @@
+.text_forback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 15% 0 0 0;
+    font-size: 74px;
+    width: 60%;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+.zoocafe_name{
+    font-weight: 900;
+    font-size: 50px;
+    color: var(--yellow);
+}

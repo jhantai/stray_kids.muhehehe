@@ -31,7 +31,9 @@ function FoodSwiper() {
                     return (
                         <SwiperSlide className={'mainSwiperSlide'} key={idx}>
                             <div>
-                                <img className={'swiperFoodImg'} src={item.src} alt="food"/>
+                                <a href="foodlist">
+                                    <img className={'swiperFoodImg'} src={item.src} alt="food"/>
+                                </a>
                             </div>
                             <p>{item.description}</p>
                         </SwiperSlide>
