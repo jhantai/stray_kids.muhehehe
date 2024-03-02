@@ -12,7 +12,6 @@ const AboutPage = () => {
         <Background/>
         <Grooming/>
         <SwiperAnimals/>
-        <Footer/>
        </div>
         
     );

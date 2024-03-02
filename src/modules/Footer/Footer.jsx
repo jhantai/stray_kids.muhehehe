@@ -1,10 +1,13 @@
 import React from 'react'
 import './Footer.css'
+import logo from '../../assets/logo.jpg'
 
 const Footer = (props) => {
   return (
+    
     <footer>
       <div className="footer-container">
+        <img className='img' src={logo} alt="" />
         <div className="footer-list">
           <h3>Mozza</h3>
           <ul>
@@ -28,7 +31,7 @@ const Footer = (props) => {
             <li>Twitter</li>
             <li>Instagram</li>
             <li>Facebook</li>
-            <li>Dribbblegit <input type="git" name="" id="" /></li>
+            <li>Dribbblegit</li>
           </ul>
         </div>
       </div>
