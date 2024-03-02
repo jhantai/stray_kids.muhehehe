@@ -1,0 +1,15 @@
+.div{
+    background-image: var(--back);
+    background-size: 100%;
+    background-repeat: no-repeat;width: 212.5vh;
+    height: 110vh;
+}
+
+.title{
+    text-align: center;
+    padding: 4% 0 0 10%;
+    font-size: 74px;
+    color: white;
+    width: 60%;
+    margin: 0 auto;
+}

@@ -1,0 +1,26 @@
+footer {
+    /* background-color: #f0f0f0; */
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer-list {
+    text-align: center;
+  }
+  
+  .footer-list h3 {
+    font-size: 18px;
+  }
+  
+  .footer-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-list li {
+    margin: 5px 0;
+  }
