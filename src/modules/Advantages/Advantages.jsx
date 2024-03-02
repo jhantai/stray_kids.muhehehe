@@ -4,8 +4,8 @@ import {advantagesList} from "../../constants/advantages";
 
 function Advantages(props) {
     return (
-        <section className={''}>
-            <h2>У нас есть:</h2>
+        <section>
+            <h2 className={'advantagesTitle'}>У нас есть:</h2>
             <div className={'advantagesSection'}>
                 <div className={'catAdvantages'}></div>
                 <div className={'advantagesCards'}>
