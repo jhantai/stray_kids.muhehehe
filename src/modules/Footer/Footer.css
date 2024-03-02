@@ -23,6 +23,11 @@ color: #A8A8A8;
     font-size: 18px;
   }
   
+  .footer-list h3 a{
+    color: #A8A8A8;
+    text-decoration: none;
+  }
+
   .footer-list ul {
     list-style: none;
     padding: 0;
@@ -30,9 +35,21 @@ color: #A8A8A8;
   
   .footer-list li {
     margin: 5px 0;
+   
   }
+
+  .footer-list li a{
+    color: #A8A8A8;
+    text-decoration: none;
+  }
+
+  footer ul li a:hover{
+    color: #A8A8A8;
+}
 
   .img{
     width: 150px;
     height: 150px;
   }
+
+
