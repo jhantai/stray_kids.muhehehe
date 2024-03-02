@@ -3,6 +3,7 @@ import {Route, Routes} from "react-router-dom";
 import HomePage from "../pages/HomePage/HomePage";
 import MenuPage from "../pages/MenuPage/MenuPage";
 import AboutPage from "../pages/AboutPage/AboutPage";
+import Header from "../modules/Header/Header";
 
 const MainRoute = () => {
     return (
