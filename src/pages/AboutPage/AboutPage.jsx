@@ -1,10 +1,20 @@
-import React from 'react';
+
+import React from 'react'
+import './AboutPage.css'
+import Background from '../../components/Background/Background';
+import Grooming from '../../modules/Grooming/Grooming';
+import SwiperAnimals from '../../modules/SwiperAnimals/SwiperAnimals';
+import Footer from '../../modules/Footer/Footer';
+
 
 const AboutPage = () => {
     return (
-        <div>
-            
-        </div>
+       <div>
+        <Background/>
+        <Grooming/>
+        <SwiperAnimals/>
+       </div>
+        
     );
 };
 

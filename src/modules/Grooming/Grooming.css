@@ -1,0 +1,40 @@
+.groomingPhoto{
+    background: url('../../assets/Group 114.png') no-repeat;
+    background-size: 80%;
+    width: 500px;
+    height: 500px;
+}
+
+.groomingSection{
+    margin-bottom: 70px;
+}
+
+.groomingSection h2{
+    margin: 80px 0 20px 0;
+    font-size: 30px;
+    color: var(--blue);
+    text-align: center;
+}
+
+.groomingText{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.groomingText div{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 100px 0 0 0;
+}
+
+.groomingText div h3{
+    color: var(--blue);
+    font-size: 35px;
+    width: 500px;
+}
+
+.groomingText div p{
+    width: 500px;
+}

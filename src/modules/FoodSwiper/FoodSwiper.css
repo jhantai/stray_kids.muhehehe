@@ -1,0 +1,30 @@
+.mainSwiperSlide{
+    border: none !important;
+}
+
+.FoodSwiper{
+    margin-bottom: 50px;
+}
+
+.FoodSwiper h2{
+    color: var(--yellow);
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    color: var(--yellow);
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--yellow);
+}
+
+.mainSwiperSlide h3{
+    color: var(--yellow);
+}
+
+.swiperFoodImg{
+    border-radius: 20px;
+}
