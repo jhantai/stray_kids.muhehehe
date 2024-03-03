@@ -9,7 +9,7 @@ import Footer from '../../modules/Footer/Footer';
 
 const AboutPage = () => {
     return (
-       <div>
+       <div style={{overflow: "hidden"}}>
         <Background/>
         <Grooming/>
         <SwiperAnimals/>

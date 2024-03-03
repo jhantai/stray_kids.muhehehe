@@ -18,6 +18,10 @@
     cursor: pointer;
 }
 
+.tamak_photo:hover{
+    width: 730px;
+}
+
 .foodCards{
     display: flex;
     align-items: center;

@@ -6,11 +6,19 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './SwiperAnimals.css'
+import {animate} from "../../constants/animate";
+import { motion } from "framer-motion";
 
 
 export default function App() {
   return (
-    <><h3 className='title'>Наши животные</h3>
+    <motion.section
+        variants={animate}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{once: true}}
+    >
+      <h3 className='title'>Наши животные</h3>
       <Swiper
         navigation={true}
         pagination={true}
@@ -30,6 +38,6 @@ export default function App() {
           )
         })}
       </Swiper>
-    </>
+    </motion.section>
   );
 }

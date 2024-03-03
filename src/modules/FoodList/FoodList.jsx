@@ -9,6 +9,8 @@ import {goryachee} from "../../constants/foodList/goryachee";
 import {salat} from "../../constants/foodList/salat";
 import {desert} from "../../constants/foodList/desert";
 import CloseIcon from "@mui/icons-material/Close";
+import {animate} from "../../constants/animate";
+import { motion } from "framer-motion";
 
 function FoodList(props) {
     const [deserts, setDeserts] = useState(false)
@@ -16,7 +18,15 @@ function FoodList(props) {
     const [goryach, setGoryach] = useState(false)
     const [salats, setSalats] = useState(false)
     const [hidenFootList, setHidenFootList] = useState(false)
-    console.log(deserts, zavtraks, goryach, salats)
+
+    function close() {
+        setHidenFootList(false)
+        setZavtraks(false)
+        setSalats(false)
+        setDeserts(false)
+        setZavtraks(false)
+        setGoryach(false)
+    }
     return (
         <section>
             <div>
@@ -27,25 +37,31 @@ function FoodList(props) {
                         {zavtraks ?
                             null
                             :
-                            <div
+                            <motion.div
                                 className='eda_photo'
                                 onClick={() => {
                                     setZavtraks(true)
                                     setHidenFootList(true)
                                 }}
+                                variants={animate}
+                                initial="hidden"
+                                whileInView="visible"
                             >
                                 <img
                                     className='tamak_photo'
                                     src={zavtraki} alt=""
 
                                 />
-                            </div>
+                            </motion.div>
                         }
                         {goryach ?
                             null
                             :
-                            <div
+                            <motion.div
                                 className='eda_photo'
+                                variants={animate}
+                                initial="hidden"
+                                whileInView="visible"
                             >
                                 <img
                                     className='tamak_photo'
@@ -54,14 +70,20 @@ function FoodList(props) {
                                         setGoryach(true)
                                         setHidenFootList(true)
                                     }}
+                                    variants={animate}
+                                    initial="hidden"
+                                    whileInView="visible"
                                 />
-                            </div>
+                            </motion.div>
                         }
                         {salats ?
                             null
                             :
-                            <div
+                            <motion.div
                                 className='eda_photo'
+                                variants={animate}
+                                initial="hidden"
+                                whileInView="visible"
                             >
                                 <img
                                     className='tamak_photo'
@@ -71,13 +93,16 @@ function FoodList(props) {
                                         setHidenFootList(true)
                                     }}
                                 />
-                            </div>
+                            </motion.div>
                         }
                         {deserts ?
                             null
                             :
-                            <div
+                            <motion.div
                                 className='eda_photo'
+                                variants={animate}
+                                initial="hidden"
+                                whileInView="visible"
                             >
                                 <img
                                     className='tamak_photo'
@@ -86,8 +111,11 @@ function FoodList(props) {
                                         setDeserts(true)
                                         setHidenFootList(true)
                                     }}
+                                    variants={animate}
+                                    initial="hidden"
+                                    whileInView="visible"
                                 />
-                            </div>
+                            </motion.div>
                         }
                     </div>
                 }
@@ -99,13 +127,7 @@ function FoodList(props) {
                         <div className={'foodCards'}>
                             <div
                                 className={'CloseIcon'}
-                                onClick={() => {
-                                    setHidenFootList(false)
-                                    setSalats(false)
-                                    setDeserts(false)
-                                    setGoryach(false)
-                                    setZavtraks(false)
-                                }}
+                                onClick={close}
                             >
                                 <CloseIcon/>
                             </div>
@@ -137,13 +159,7 @@ function FoodList(props) {
                         <div className={'foodCards'}>
                             <div
                                 className={'CloseIcon'}
-                                onClick={() => {
-                                    setHidenFootList(false)
-                                    setZavtraks(false)
-                                    setSalats(false)
-                                    setDeserts(false)
-                                    setZavtraks(false)
-                                }}
+                                onClick={close}
                             >
                                 <CloseIcon/>
                             </div>
@@ -174,12 +190,7 @@ function FoodList(props) {
                         <div className={'foodCards'}>
                             <div
                                 className={'CloseIcon'}
-                                onClick={() => {
-                                    setHidenFootList(false)
-                                    setDeserts(false)
-                                    setGoryach(false)
-                                    setZavtraks(false)
-                                }}
+                                onClick={close}
                             >
                                 <CloseIcon/>
                             </div>
@@ -211,12 +222,7 @@ function FoodList(props) {
                         <div className={'foodCards'}>
                             <div
                                 className={'CloseIcon'}
-                                onClick={() => {
-                                    setHidenFootList(false)
-                                    setGoryach(false)
-                                    setZavtraks(false)
-                                    setSalats(false)
-                                }}
+                                onClick={close}
                             >
                                 <CloseIcon/>
                             </div>
