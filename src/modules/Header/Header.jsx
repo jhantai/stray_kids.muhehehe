@@ -20,7 +20,7 @@ function Header(props) {
                     <button
                         className={'closeBtn'}
                         onClick={() => {setActiveModalWindov(!activeModalWindov)}}
-                    >X</button>
+                    ><CloseIcon /></button>
                     <div>
                         <h2>Заказ брони</h2>
                         <div className={'headerForm'}>
