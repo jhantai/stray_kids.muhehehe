@@ -4,7 +4,9 @@ import './FoodListTitle.css'
 function FoodlistTitle(props) {
     return (
         <section>
-            <div className="text_forback">
+            <div
+                className="text_forback"
+            >
                 <p>Наше Меню</p>
             </div>
         </section>

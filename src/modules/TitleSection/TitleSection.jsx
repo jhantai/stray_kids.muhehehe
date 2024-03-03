@@ -3,7 +3,7 @@ import './TitleSection.css'
 import {animate} from "../../constants/animate";
 import { motion } from "framer-motion";
 
-function TitleSection(props) {
+function TitleSection() {
     return (
         <motion.section
             className={'titleSectionMain'}

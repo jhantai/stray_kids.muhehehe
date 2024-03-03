@@ -16,13 +16,14 @@ export default function App() {
         pagination={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
+        loop={true}
+        grabCursor={true}
       >
         {animalsSwiper.map((item, idx) => {
           return (
               <SwiperSlide key={idx}>
-                
                 <div>
-                  <img  src={item.src} alt="cat"/>
+                  <img className={'swiperAnimalsImg'} src={item.src} alt="cat"/>
                 </div>
                 {/* <p className='swiper-animals-description'>{item.description}</p> */}
               </SwiperSlide>
